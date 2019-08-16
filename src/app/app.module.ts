@@ -6,7 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './components/main/main.component';
-import { NavLinksComponent } from './components/Layout/nav-links/nav-links.component';
+import { NavLinksComponent } from './components/layout/nav-links/nav-links.component';
 import { GridComponent } from './components/grid/grid.component';
 import { TicketsComponent } from './components/tickets/tickets.component';
 import { TicketItemComponent } from './components/tickets/ticket-item/ticket-item.component';
@@ -15,8 +15,8 @@ import { TicketItemComponent } from './components/tickets/ticket-item/ticket-ite
   declarations: [
     AppComponent,
     MainComponent,
-    NavLinksComponent,
     GridComponent,
+    NavLinksComponent,
     TicketsComponent,
     TicketItemComponent
   ],
