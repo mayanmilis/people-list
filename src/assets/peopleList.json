@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "name": "Israel Israeli",
+        "city": "Petach-Tikva"
+    },
+    {
+        "id": 2,
+        "name": "Tal Cohen",
+        "city": "Tel-Aviv"
+    },
+    {
+        "id": 3,
+        "name": "Yossi Levi",
+        "city": "Netanya"
+    },
+    {
+        "id": 4,
+        "name": "Ronit Hirsh",
+        "city": "Petach-Tikva"
+    },
+    {
+        "id": 5,
+        "name": "Danny Efrati",
+        "city": "Lod"
+    },
+    {
+        "id": 6,
+        "name": "Irena Stas",
+        "city": "Tel-Aviv"
+    },
+    {
+        "id": 7,
+        "name": "Gil Agami",
+        "city": "Kfar-Saba"
+    },
+    {
+        "id": 8,
+        "name": "Nofar Shuster",
+        "city": "Herzliya"
+    },
+    {
+        "id": 9,
+        "name": "Roni Nagar",
+        "city": "Raanana"
+    }
+]

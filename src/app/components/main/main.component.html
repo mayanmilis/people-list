@@ -1,0 +1,53 @@
+<div class="main">
+  <div class="container">
+    <div class="filter">
+      <div class="header">
+          <h1>Filter by:</h1>
+      </div>
+      <div class="filter-by">
+          <div class="input-container">
+              <h2>Name</h2>
+              <input type="text" [(ngModel)]="nameInput" placeholder="Enter name..."/>
+              <button (click)="filterByName()">Apply</button>
+            </div>
+            <div class="input-container">
+              <h2>City</h2>
+              <input type="text" [(ngModel)]="cityInput" placeholder="Enter city..."/>
+              <button (click)="filterByCity()">Apply</button>
+            </div>
+            <div class="resetSearch">
+              <button (click)="resetSearch()">RESET SEARCH</button>
+            </div>
+      </div>
+    </div>
+    <div class="view-container">
+      <div class="view-nav">
+        <header class="header">
+          <nav>
+              <div class="nav-grid"
+              (click)="showGridToggle()"
+              [ngStyle]="{'border-bottom':showGrid === true ? '5px solid white' : null }"
+              >Grid</div>
+              <div class="nav-tickets"
+              (click)="showTicketsToggle()"
+              [ngStyle]="{'border-bottom':showGrid === false ? '5px solid white' : null }"
+              >Tickets</div>
+          </nav>
+        </header>
+      </div>
+      <div class="view-content">
+          <div class="grid" *ngIf="showGrid; else elseBlock">
+              <app-grid [people]="filtered"></app-grid>
+            </div>
+            <ng-template #elseBlock>
+                <div class="tickets">
+                    <app-tickets [people]="filtered"></app-tickets>
+                </div>
+            </ng-template>
+      </div>
+
+
+
+    </div>
+  </div>
+</div>

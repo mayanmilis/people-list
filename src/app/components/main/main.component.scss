@@ -1,0 +1,134 @@
+.main{
+    width: 100%;
+    height: 100vh;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(175, 156, 167);
+    font-family: 'Open Sans', sans-serif;
+    .container{
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        .filter{
+            width: 20%;
+            height: 100%;
+            background-color: rgb(161, 144, 154);
+            color: #262228;
+            .header{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                h1{
+                    font-size: 20px;
+                    width: 100%;
+                    padding: 10px;
+                }
+            }
+            .filter-by{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                height: 50%;
+                .input-container{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    h2{
+                        width: 80%;
+                        font-weight: 700;
+                        font-size: 15px;
+                        padding-bottom: 5px;
+                        color: #262228;
+                    }
+                    input{
+                        width: 80%;
+                        border:none;
+                        border-bottom: 1px solid black;
+                        background-color: transparent;
+                    }
+                    input::placeholder{
+                        font-size: 15px;
+                        color: #4d4750;
+                    }
+                    input:focus{
+                        outline: none;
+                    }
+                    button{
+                        margin-top: 10px;
+                        padding: 10px;
+                        background-color: #D5D5D5;
+                        color: rgb(45, 51, 63);
+                        font-weight: 700;
+                        border: none;
+                        border-radius: 10%;
+                        transition: 200ms;
+                    }
+                    button:hover{
+                        background-color: white;
+                        cursor: pointer;
+                    }
+                    
+                }
+                .resetSearch{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    button{
+                        padding: 10px;
+                        background-color: #D5D5D5;
+                        color: rgb(45, 51, 63);
+                        font-weight: 700;
+                        border-radius: 10%;
+                        border: none;
+                        transition: 200ms;
+                    }
+                    button:hover{
+                        background-color: white;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .view-container{
+            width: 80%;
+            position: relative;
+            background-color: #9099A2;
+            .header{
+                background: #6D7993;
+                color: #fff;
+                font-family: 'Open Sans', sans-serif;
+                height: 40px;
+                width: 100%;
+                position: absolute;
+                nav{
+                    display: flex;
+                    flex-direction: row;
+                    height: 100%;
+                    div{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 50%;
+                    }
+                }
+                nav:hover{
+                    cursor: pointer;
+                }
+            }
+            .view-content{
+                height: 100%;
+                padding-top: 40px;
+                .tickets{
+                    height: 100%;
+                }
+                .grid{
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
