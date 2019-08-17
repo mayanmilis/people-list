@@ -144,6 +144,12 @@
                 width: 100%;
                 .filter-by{
                     flex-direction: row;
+                    .input-container{
+                        width: 300px;
+                    }
+                    .resetSearch{
+                        align-items: center;
+                    }
                 }
             }
             .view-container{
