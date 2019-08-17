@@ -8,12 +8,11 @@
           <div class="input-container">
               <h2>Name</h2>
               <input type="text" [(ngModel)]="nameInput" placeholder="Enter name..."/>
-              <button (click)="filterByName()">Apply</button>
             </div>
             <div class="input-container">
               <h2>City</h2>
               <input type="text" [(ngModel)]="cityInput" placeholder="Enter city..."/>
-              <button (click)="filterByCity()">Apply</button>
+              <button (click)="filter()">SEARCH</button>
             </div>
             <div class="resetSearch">
               <button (click)="resetSearch()">RESET SEARCH</button>

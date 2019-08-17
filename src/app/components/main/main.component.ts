@@ -20,25 +20,30 @@ export class MainComponent implements OnInit {
     this.peopleService.getPeople().subscribe(people => {
       this.people = people;
       this.filtered = people;
-      console.log(this.people)
     })
   }
 
   filterByName(){
-    if(!this.nameInput){
-      return null;
-    }else{
       this.filtered = this.filtered.filter(item => item.name.toLocaleLowerCase().includes(this.nameInput.toLocaleLowerCase()));
-      console.log(this.filtered)
-    }
   }
 
   filterByCity() {
-    if(!this.cityInput){
-      return null;
-    }else{
       this.filtered = this.filtered.filter(item => item.city.toLocaleLowerCase().includes(this.cityInput.toLocaleLowerCase()));
-      console.log(event,this.filtered)
+  }
+
+  filter() {
+    if(!this.nameInput&&!this.cityInput){
+      return null;
+    }
+    else if(this.nameInput&&!this.cityInput){
+      this.filterByName();
+    }
+    else if(!this.nameInput&&this.cityInput){
+      this.filterByCity();
+    }
+    else{
+      this.filterByName();
+      this.filterByCity();
     }
   }
 

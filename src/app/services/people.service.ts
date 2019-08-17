@@ -13,4 +13,5 @@ export class PeopleService {
   getPeople():Observable<Person[]> {
     return this.http.get<Person[]>('../../assets/peopleList.json');
   }
+
 }
