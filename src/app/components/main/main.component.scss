@@ -4,18 +4,17 @@
     padding-top: 60px;
     display: flex;
     justify-content: center;
-    background-color: rgb(175, 156, 167);
+    background-color: goldenrod;
     font-family: 'Open Sans', sans-serif;
     .container{
         width: 95%;
         display: flex;
         flex-direction: row;
-        background-color: white;
         .filter{
             width: 20%;
             height: 100%;
-            background-color: rgb(161, 144, 154);
-            color: #262228;
+            background-color: white;
+            color: #333333;
             .header{
                 display: flex;
                 justify-content: center;
@@ -42,7 +41,7 @@
                         font-weight: 700;
                         font-size: 15px;
                         padding-bottom: 5px;
-                        color: #262228;
+                        color: #333333;
                     }
                     input{
                         width: 80%;
@@ -52,23 +51,24 @@
                     }
                     input::placeholder{
                         font-size: 15px;
-                        color: #4d4750;
+                        color: #333333;
                     }
                     input:focus{
                         outline: none;
                     }
                     button{
                         margin-top: 10px;
-                        padding: 10px;
-                        background-color: #D5D5D5;
-                        color: rgb(45, 51, 63);
+                        padding: 5px;
+                        background-color: rgb(255, 255, 255);
+                        color: #333333;
+                        border: 1px solid #333333;
                         font-weight: 700;
-                        border: none;
-                        border-radius: 10%;
+                        border-radius: 0;
                         transition: 200ms;
                     }
                     button:hover{
-                        background-color: white;
+                        background-color: #333333;
+                        color: white;
                         cursor: pointer;
                     }
                     
@@ -78,16 +78,18 @@
                     display: flex;
                     justify-content: center;
                     button{
+                        margin-top: 10px;
                         padding: 10px;
-                        background-color: #D5D5D5;
-                        color: rgb(45, 51, 63);
+                        background-color: rgb(255, 255, 255);
+                        color: #333333;
+                        border: 1px solid #333333;
                         font-weight: 700;
-                        border-radius: 10%;
-                        border: none;
+                        border-radius: 0;
                         transition: 200ms;
                     }
                     button:hover{
-                        background-color: white;
+                        background-color: #333333;
+                        color: white;
                         cursor: pointer;
                     }
                 }
@@ -96,10 +98,10 @@
         .view-container{
             width: 80%;
             position: relative;
-            background-color: #9099A2;
+            background-color: #d4d4d4;
             .header{
-                background: #6D7993;
-                color: #fff;
+                background: #333333;
+                color: white;
                 font-family: 'Open Sans', sans-serif;
                 height: 40px;
                 width: 100%;

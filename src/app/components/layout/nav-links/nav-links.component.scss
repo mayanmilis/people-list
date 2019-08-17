@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    background: rgb(175, 156, 167);
-    color: #262228;
+    background: #222222;
+    color: white;
     font-family: 'Open Sans', sans-serif;
     height: 60px;
     position: absolute;
@@ -11,18 +11,28 @@
     h1{
         font-family: 'Lalezar', cursive;
         height: 100%;
-        background-color: rgb(175, 156, 167);
+        background-color: #222222;
         display: flex;
         align-items: center;
+        color: goldenrod;
         padding: 10px;
-    }
-    a{
-        padding: 10px;
-        transition: 200ms;
-        font-weight: 700;
-    }
-    a:hover{
-        cursor: pointer;
-        color: white;
+        a{
+            text-decoration: none;
+            color:white;
         }
+    }
+    nav{
+        a{
+            padding: 10px;
+            transition: 200ms;
+            font-weight: 700;
+            text-decoration: none;
+            color:white;
+        }
+        a:hover{
+            cursor: pointer;
+            color: gold;
+            }
+    }
+
 }

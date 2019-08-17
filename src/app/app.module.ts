@@ -10,6 +10,7 @@ import { NavLinksComponent } from './components/layout/nav-links/nav-links.compo
 import { GridComponent } from './components/grid/grid.component';
 import { TicketsComponent } from './components/tickets/tickets.component';
 import { TicketItemComponent } from './components/tickets/ticket-item/ticket-item.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TicketItemComponent } from './components/tickets/ticket-item/ticket-ite
     GridComponent,
     NavLinksComponent,
     TicketsComponent,
-    TicketItemComponent
+    TicketItemComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
