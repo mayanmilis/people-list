@@ -71,6 +71,9 @@
                         color: white;
                         cursor: pointer;
                     }
+                    button:focus{
+                        outline: none;
+                    }
                     
                 }
                 .resetSearch{
@@ -91,6 +94,9 @@
                         background-color: #333333;
                         color: white;
                         cursor: pointer;
+                    }
+                    button:focus{
+                        outline: none;
                     }
                 }
             }
