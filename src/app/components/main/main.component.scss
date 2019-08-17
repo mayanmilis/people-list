@@ -65,23 +65,17 @@
                         font-weight: 700;
                         border-radius: 0;
                         transition: 200ms;
-                    }
-                    button:hover{
-                        background-color: #333333;
-                        color: white;
-                        cursor: pointer;
-                    }
-                    button:focus{
-                        outline: none;
-                    }
-                    
+                    } 
                 }
                 .resetSearch{
                     width: 100%;
                     display: flex;
+                    flex-direction: column;
                     justify-content: center;
+                    align-items: center;
                     button{
                         margin-top: 10px;
+                        width: 150px;
                         padding: 10px;
                         background-color: rgb(255, 255, 255);
                         color: #333333;
@@ -154,7 +148,11 @@
                         width: 300px;
                     }
                     .resetSearch{
+                        flex-direction: column;
                         align-items: center;
+                        button{
+                            width: 100px;
+                        }
                     }
                 }
             }
