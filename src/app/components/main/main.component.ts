@@ -28,7 +28,7 @@ export class MainComponent implements OnInit {
     if(!this.nameInput){
       return null;
     }else{
-      this.filtered = this.filtered.filter(item => item.name.toLocaleLowerCase().includes(this.nameInput));
+      this.filtered = this.filtered.filter(item => item.name.toLocaleLowerCase().includes(this.nameInput.toLocaleLowerCase()));
       console.log(this.filtered)
     }
   }
@@ -37,7 +37,7 @@ export class MainComponent implements OnInit {
     if(!this.cityInput){
       return null;
     }else{
-      this.filtered = this.filtered.filter(item => item.city.toLocaleLowerCase().includes(this.cityInput));
+      this.filtered = this.filtered.filter(item => item.city.toLocaleLowerCase().includes(this.cityInput.toLocaleLowerCase()));
       console.log(event,this.filtered)
     }
   }
