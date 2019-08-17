@@ -24,14 +24,14 @@
       <div class="view-nav">
         <header class="header">
           <nav>
-              <div class="nav-grid"
-              (click)="showGridToggle()"
-              [ngStyle]="{'border-bottom':showGrid === true ? '5px solid gold' : null }"
-              >Grid</div>
               <div class="nav-tickets"
               (click)="showTicketsToggle()"
               [ngStyle]="{'border-bottom':showGrid === false ? '5px solid gold' : null }"
               >Tickets</div>
+              <div class="nav-grid"
+              (click)="showGridToggle()"
+              [ngStyle]="{'border-bottom':showGrid === true ? '5px solid gold' : null }"
+              >Grid</div>
           </nav>
         </header>
       </div>
