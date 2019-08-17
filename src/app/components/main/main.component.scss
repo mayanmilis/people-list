@@ -147,8 +147,20 @@
                 }
             }
             .view-container{
-                height: 80%;
+                height: 70%;
                 width: 100%;
+            }
+        }
+    }
+}
+@media (max-height: 500px){
+    .main{
+        .container{
+            .filter{
+                height: 50%;
+            }
+            .view-container{
+                height: 50%;
             }
         }
     }
